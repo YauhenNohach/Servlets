@@ -6,12 +6,11 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
         version="4.0">
 
-    <display-name>My WebApp</display-name>
+    <display-name>LabServlet_war</display-name>
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
-    <!-- Раскомментируйте, если нужен EncodingFilter -->
     <!--
     <filter>
         <filter-name>EncodingFilter</filter-name>
@@ -23,7 +22,6 @@
     </filter-mapping>
     -->
 
-    <!-- Error pages (раскомментируйте, когда создадите JSP) -->
     <!--
     <error-page>
         <error-code>404</error-code>

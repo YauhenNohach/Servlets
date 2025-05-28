@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "HelloServlet", urlPatterns = "/hello")
+@WebServlet(name = "HelloServlet", urlPatterns = "/")
 public class HelloServlet extends HttpServlet {
     private static final Logger logger = LogManager.getLogger(HelloServlet.class);
     @Override

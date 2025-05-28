@@ -1,4 +1,12 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Contacts</title></head><body>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+</head>
+<body>
 <h1>Contacts</h1>
 <form action="contacts" method="post">
     <input type="hidden" name="action" value="add"/>
@@ -21,4 +29,5 @@
         </tr>
     </c:forEach>
 </table>
-</body></html>
+</body>
+</html>

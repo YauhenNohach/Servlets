@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f9;
+    margin: 0; padding: 20px;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+form button {
+    padding: 12px;
+    background: #2980b9;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background: #1f6391;
+}
+
+.cards-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+}
+
+.card img {
+    width: 180px;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background: #f9f9f9;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    text-align: center;
+    min-height: 48px;
+}
+
+.card .price {
+    font-size: 16px;
+    color: #27ae60;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card form,
+.card button {
+    box-sizing: border-box;
+}
+
+.card form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.card button {
+    width: 100%;
+    padding: 8px;
+    background: #e67e22;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0;
+}
+
+.card button:hover {
+    background: #cf6e17;
+}
+
+.cart-link {
+    display: block;
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2980b9;
+    text-decoration: none;
+    border: 2px solid #2980b9;
+    padding: 10px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cart-link:hover {
+    background-color: #2980b9;
+    color: white;
+}

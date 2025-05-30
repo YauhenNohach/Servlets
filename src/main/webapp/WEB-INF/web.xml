@@ -6,7 +6,7 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
         version="4.0">
 
-    <display-name>LabServlet_war</display-name>
+    <display-name>LabServlet_war_war</display-name>
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>

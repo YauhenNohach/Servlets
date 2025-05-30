@@ -26,7 +26,7 @@ public class AuthServlet extends HttpServlet {
         User user = authService.authenticate(email, password);
         if (user != null) {
             req.getSession().setAttribute("user", user);
-            resp.sendRedirect(req.getContextPath() + "/contacts");
+            resp.sendRedirect(req.getContextPath() + "/orders");
         } else {
             req.setAttribute("error", "Invalid credentials or not confirmed.");
             req.getRequestDispatcher("/jsp/auth/login.jsp").forward(req, resp);

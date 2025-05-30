@@ -1,14 +1,28 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
     <title>Заказы</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/styles.css" />
+    <style>
+        .logout-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 0.8em;
+            padding: 4px 8px;
+        }
+        body {
+            position: relative;
+        }
+    </style>
 </head>
 <body>
+<form action="${pageContext.request.contextPath}/logout" method="get" style="display:inline;">
+    <button type="submit" class="logout-btn">Выйти</button>
+</form>
 
 <h1>Добавить заказ</h1>
 <form action="${pageContext.request.contextPath}/orders" method="post">
@@ -36,6 +50,5 @@
 </div>
 
 <a href="${pageContext.request.contextPath}/cart" class="cart-link">Перейти в корзину</a>
-
 </body>
 </html>

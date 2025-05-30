@@ -23,7 +23,7 @@ public class RegistrationService {
         user.setConfirmationToken(token);
         try {
             userDao.save(user);
-            String link = "http://localhost:8080/LabServlet_war/confirm?token=" + token;
+            String link = "http://localhost:8080/LabServlet_war_war/confirm?token=" + token;
             MailUtil.send(email, "Confirm your registration",
                     "Click <a href='" + link + "'>here</a> to confirm.");
         } catch (Exception e) {
